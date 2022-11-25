@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    /* border: 2px solid black; */
+    width: 85%;
+    height: 95vh;
+    margin: auto;
+}
+
+header nav{
+    width: 95%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav img{
+    height: 60px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#last{
+    padding-right:0px;
+}
+
+header nav ul li{
+    padding: 7px 9px;
+    
+}
+
+header nav ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 4px;
+    background-color: #049ea9;
+    transition: 0.5s;
+    margin: auto;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+    border-radius: 20px;
+}
+
+header .content{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid red; */
+}
+
+header .content::before{
+    content: "";
+    position: absolute;
+    background-image: url("Travel Agency IMG_ICON/img/background1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 93%;
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    z-index: -1;
+}
+
+header .content .cont{
+    position: absolute; 
+    overflow: hidden;
+    left:3%;
+    top: 15%;
+    width: 710px;
+    height: 160px;
+    color:  #ffffff;
+    /* background-color: black; */
+}
+
+header .content .cont h1{
+    position: absolute;
+    top: -150px;
+    font-size: 5rem;
+    line-height: 76px;
+}
+
+header .content .tripbox{
+    /* border: 2px solid orange; */
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+
+}
+
+header .content .tripbox .searchbox{
+    position: absolute;
+    padding: 10px 20px;
+    top: 285px;
+    left: 7px;
+    width: 60%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px;
+    box-shadow: 0px 10px 25px rgb(114, 114, 114);
+    z-index: 5;
+    border-radius: 10px;
+}
+
+header .tripbox .searchbox .card{
+    width: 200px;
+    height: 100%;
+    /* border:1px solid black; */
+}
+
+header .tripbox .searchbox .card h4{
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+header .tripbox .searchbox .card h4 .fa-solid{
+    font-size: 18px;
+    position: relative;
+    bottom: 3px;
+    transition: .3s linear;
+
+}
+
+header .tripbox .searchbox .card input{
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+header .tripbox .searchbox input[type="button"]{
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header .tripbox .searchbox input[type="button"]:hover{
+    background: gray;
+}
+
+header .tripbox .travelbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    top: 321px;
+    
+    /* background-color: white; */
+    border-radius: 10px;
+    box-shadow: 0px 20px 25px -10px rgb(165, 165, 165);
+}
+
+header .tripbox .travelbox::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 241, 241, 0.7);
+    backdrop-filter: blur(5);
+    border-radius: 10px;
+}
+
+header .tripbox .travelbox h2{
+    position: absolute;
+    top: 72px;
+    left: 35px;
+    font-weight: 700;
+}
+
+header .tripbox .travelbox .cards{
+    width: 93%;
+    height: 180px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 107px;
+    left: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .tripbox .travelbox .cards .card{
+    width: 220px;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+header .tripbox .travelbox .cards .card h3{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+}
+
+header .tripbox .travelbox .cards .card h3 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+header .tripbox .travelbox .cards .card img{
+    width: 100%;
+    height: 50%;
+}
+
+header .tripbox .travelbox .cards .card .button-cyt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .tripbox .travelbox .cards .card .button-cyt a{
+    text-decoration: none;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 8px;
+    transition: 0.3s;
+}
+
+header .tripbox .travelbox .cards .card .button-cyt a:hover{
+    background-color: gray;
+}
+
+header .tripbox .travelbox .cards .card .button-cyt h5{
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 17px;
+}
+
+header .tripbox .travelbox .cards .card .button-cyt h5 span{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.offers{
+    width: 68%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.offers h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.offers p{
+    text-align: center;
+    font-weight: 900;
+}
+
+.offers .cards{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    height: 260px;
+    width: 828px;
+}
+
+.offers .cards .card{
+    width: 190px;
+    height: 260px;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 10px;
+    /* z-index: -10; */
+    transition: 0.3s;
+}
+
+.offers .cards .card:hover{
+    transform: scale(1.2);
+    z-index: 7;
+}
+
+.offers .cards .card h3{
+    margin: auto;
+    padding: 6px 0px;
+    background: rgb(98,189, 197,0.72);
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.offers .cards .card .img_text{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    position: relative;
+    overflow: visible;
+}
+
+.offers .cards .card .img_text img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.offers .cards .card .img_text h4{
+    position: absolute;
+    overflow: visible;
+    top: 99px;
+    font-size: 11px;
+    padding: 9px 9px;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    color: white;
+    z-index: 1;
+}
+
+.offers .cards .card .img_text h4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(5px);
+    bottom: 0;
+    left: 0;
+    z-index:-1;
+}
+
+.offers .cards .card .cont_bx{
+    width: 95%;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    border-radius: 0px 0px 5px 5px;
+    margin: auto;
+}
+
+.offers .cards .card .cont_bx .price , .days{
+    margin: 0px 0px;
+}
+
+.offers .cards .card .cont_bx .price .heart{
+    display: flex;
+    align-items: center;
+}
+
+.offers .cards .card .cont_bx .price .heart svg:nth-child(1){
+    color: red;
+    margin: 0px 1px;
+    margin-left: 3px;
+}
+
+.offers .cards .card .cont_bx .price .heart span{
+    color: #000;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0px 3px;
+}
+
+.offers .cards .card .cont_bx .price .info_price{
+    display: flex;
+}
+.offers .cards .card .cont_bx .price .info_price a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-right: 3px;
+    font-size: 13px
+}
+
+.offers .cards .card .cont_bx .price .info_price a:hover {
+    color: gray;
+}
+
+.offers .cards .card .cont_bx .price .info_price h5 {
+    font-size: 16px;
+}
+
+.offers .cards .card .cont_bx .dayes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    color: white;
+    background-color: #000;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.offers .cards .card .cont_bx .dayes:hover{
+    transform: rotate(360deg);
+}
+
+.offers .cards .card .cont_bx .days{
+    font-size: 10px;
+    text-align: center;
+}
+
+.Destination{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Destination .des_bx,.img_bx{
+    position: relative;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.Destination .des_bx h4{
+    margin: 0px;
+    font-size: 33px;
+    color: #000;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.Destination .des_bx p{
+    font-size: 12px;
+}
+
+.Destination .des_bx li{
+    list-style: none;
+    padding: 0px 0px 8px 0px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Destination .des_bx h6{
+    width: 250px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.Destination .des_bx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    /* border: 2px solid #000; */
+    transition: 0.3s;
+}
+
+.Destination .des_bx button:hover{
+    background: gray;
+    border: 2px solid gray;
+    transform: scale(1.2);
+}
+
+.Destination .img_bx img{
+    width: 100%;
+    height: 420px;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+footer h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 27px;
+    font-weight: 600;
+}
+
+footer p{
+    text-align: center;
+    width: 401px;
+    font-size: 13px;
+    margin: 13px 0px;
+    line-height: 15px;
+}
+
+footer .input{
+    box-shadow: 0px 3px 20px -1px gray;
+    border-radius: 20px;
+}
+
+footer .input input{
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 12px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+footer .input button{
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+footer .input button:hover{
+    background: gray;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+footer ul li{
+    text-align: center;
+    margin-right: 30px;
+}
+
+footer ul li h5{
+    
+    font-size: 11px;
+    font-weight: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 18px;
+    border-top: 2px solid black;
+    padding-top: 3px;
+    
+}
